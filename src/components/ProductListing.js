@@ -1,13 +1,8 @@
-import React from "react";
+import React from 'react';
+import ProductComponents from './ProductComponents';
 
-const ProductListing=()=>{
-
-  return(
-
-    <h1>Product Listing</h1>
-
-  )
-
-}
+const ProductListing = () => {
+  return <ProductListing />;
+};
 
 export default ProductListing;
