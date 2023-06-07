@@ -3,11 +3,15 @@ import {ActionTypes} from "../constants/actionTypes";
 
 export const setProduct=(products)=>{
 
+  console.log("vvv")
+
+
   return{
 
-    type:ActionTypes.SET_PRODUCTS,
+    type:"SET_PRODUCTS",
     payload:products
 
+   
   }
 
 
