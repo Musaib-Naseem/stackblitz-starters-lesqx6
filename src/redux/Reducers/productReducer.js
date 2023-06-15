@@ -14,4 +14,22 @@ export const productReducer = (state = initialState, actions) => {
   }
 };
 
+
+export const selectedProductReducer=(state={},actions)=>{
+
+switch(actions.type){
+
+  case "SELECTED_PRODUCTS":
+
+   return { ...state,...actions.payload};
+
+   default:
+
+   return state;
+
+
+}
+
+}
+
 export default productReducer;

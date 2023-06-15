@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector,useDispatch } from 'react-redux';
+import {Link} from "react-router-dom";
 import {setProduct} from '../redux/actions/productActions';
 
 
@@ -47,6 +48,7 @@ const ProductComponents = () => {
         const { id, title, category, image,price } = data;
 
         return (
+         <Link to={ `/product/${id}`}>
           <div
             id={id}
             style={{
@@ -60,6 +62,7 @@ const ProductComponents = () => {
             <p> {title}</p>
             <p> {category}</p>
           </div>
+          </Link>
         );
       })}
     </div>
