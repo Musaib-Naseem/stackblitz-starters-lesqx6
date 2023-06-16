@@ -31,7 +31,13 @@ const ProductDetails = () => {
   }, []);
 
   return (
+    <div>
+{
+  Object.keys(product).length === 0 ? (
 
+    <div>Loading...</div>
+
+  ) : (
     <div>
 
    <img width="100px" src={image} />
@@ -45,8 +51,10 @@ const ProductDetails = () => {
   )
 
 
-    </div>
+    </div> )
 
+}
+</div>
 
   )
 };
