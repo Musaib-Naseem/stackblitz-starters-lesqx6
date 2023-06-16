@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 import React from 'react';
 import './style.css';
 import Header from './components/Header';
@@ -16,7 +25,7 @@ export default function App() {
        <Routes>
 
        <Route path="/" element={<ProductListing />}></Route>
-       <Route path="/product/:productId"   element={<ProductComponents />} ></Route>
+       <Route path="/product/:productId"   element={<ProductDetails />} ></Route>
        </Routes>
 
       </BrowserRouter>
